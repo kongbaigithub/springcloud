@@ -12,3 +12,8 @@ eureka:
   client:
     service-url:
       defaultZone: http://localhost:8888/eureka/
+sayHello: 
+  ribbon: 
+    NFLoadBalancerRuleClassName: com.controller.MyRule
+    NFLoadBalancerPingClassName: com.controller.MyPing
+    listOfServers: http://localhost:1111/,http://localhost:1112/,http://localhost:1113

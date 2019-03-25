@@ -23,6 +23,6 @@ public class Controller {
 		System.out.println("ServiceId is:"+inst.getServiceId());
 		System.out.println("url path is:"+inst.getUri().getPath());
 		
-		return "hello "+username;
+		return "this is service2 ,hello "+username;
 	}
 }
